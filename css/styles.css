@@ -66,6 +66,7 @@ body {
 }
 .home .content-wrapper {
     background: rgb(255 255 255 / 0.9)
+    flex: 1 0 auto;
 }
 
 footer {
