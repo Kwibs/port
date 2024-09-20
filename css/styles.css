@@ -76,6 +76,7 @@ body {
 footer {
     background: #8d8a8a;
     color: #d3d4d6;
+    display: flex;
 }
 .socials {
     list-style-type: none;
