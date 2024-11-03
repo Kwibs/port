@@ -98,3 +98,12 @@ footer {
 .socials img:hover {
     opacity: 0.5;
 }
+canvas {
+    position: absolute; /* Allow it to cover the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100%; /* Cover the full width */
+    height: 100%; /* Cover the full height */
+    z-index: -1; /* Send it behind other elements */
+}
+
