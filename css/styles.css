@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.art-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three images per row */
+    gap: 20px; /* Space between grid items */
+    padding: 20px;
+    justify-items: center; /* Center items in their grid cells */
+}
+
+.art-item img {
+    width: 100%;
+    max-width: 1000px; /* Adjust image size */
+    max-height: 480px; /* Adjust image size */
+    object-fit: cover;
+    /* border: 2px solid #333; */
+    margin-bottom: 10px;
+}
+
+.art-item textarea {
+    width: 90%; /* Adjust width to fit below the image */
+    height: 60px; /* Adjust height for text input */
+    resize: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    padding: 10px;
+    /* border: 1px solid #333; */
+}
+
+
+
+body {
+    font-family: 'Roboto', sans-serif; /* Changed to Roboto font */
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+}
+
+header {
+    position: relative;
+    z-index: 1; /* Keep header above background */
+    padding: 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+}
+
+main {
+    position: relative;
+    z-index: 1; /* Keep main content above background */
+    padding: 20px;
+    text-align: center;
+    flex: 1; /* Allow main to grow and fill available space */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    position: relative;
+    z-index: 1; /* Keep footer above background */
+}
+
+.image-description {
+    font-family: 'Roboto', sans-serif; /* Matches the site's typography */
+    font-size: 16px;                  /* Adjust font size as needed */
+    font-style: italic;               /* Italicized text for description */
+    color: #555;                      /* Softer text color for subtlety */
+    text-align: center;               /* Center the description */
+    margin-top: 5px;                  /* Space between image and description */
+    margin-bottom: 10px;              /* Space between description and textarea */
+}
+
+
+.image-title {
+    margin-top: 10px; /* Space between the image and the title */
+    margin-bottom: 5px; /* Space between title and textarea */
+}
+
+
+.scale-on-hover {
+    transition: transform 0.3s ease; /* Smooth scaling transition */
+}
+
+.scale-on-hover:hover {
+    transform: scale(1.1); /* Enlarge to 1.5x when hovered */
+}
+
+
+.social-icons {
+    margin-top: 10px; /* Space above icons */
+}
+
+.social-icons a {
+    color: #333; /* Icon color */
+    margin: 0 10px; /* Space between icons */
+    font-size: 24px; /* Icon size */
+    text-decoration: none; /* Remove underline */
+}
+
+.social-icons a:hover {
+    color: #00FFFF; /* Change color on hover */
+}
